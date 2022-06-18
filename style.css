@@ -32,8 +32,7 @@ section h1{
 }
 section{
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 #botao{
     display: block;
@@ -59,8 +58,14 @@ img{
     /* min-width: 300px; */
 
 }
-section div{
+#text{
     margin-left: 35px;
+    margin-top: 40px;
+}
+#logo{
+    width: 250px;
+    margin-bottom: 96px;
+    margin-top: 50px;
 }
 footer{
     margin-top: 20px;
@@ -125,5 +130,9 @@ footer{
         border-radius: 30px;
     
         box-shadow: 0px 5px 10px #43326c;
+    }
+    #text{
+        margin-left: 0;
+        margin-top: 0;
     }
 }
