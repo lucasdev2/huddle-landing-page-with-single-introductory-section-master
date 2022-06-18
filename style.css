@@ -41,9 +41,15 @@ section{
     text-decoration: none;
     background-color: white;
     width: fit-content;
-    padding: 10px 60px;
-    border-radius: 20px;
+    padding: 15px 60px;
+    border-radius: 30px;
+
+    box-shadow: 0px 5px 10px #43326c;
 }
+#botao:hover{
+    opacity:0.9;
+}
+
 section p {
     max-width: 460px;
     margin: 20px 0 20px 0;
@@ -56,20 +62,38 @@ img{
 section div{
     margin-left: 35px;
 }
-
+footer{
+    margin-top: 20px;
+}
+.attribution {
+     font-size: 11px; text-align: center; 
+}
+.attribution a {
+     color: hsl(0, 0%, 73%); 
+     text-decoration: none;
+    }
+    .attribution a:hover {
+        text-decoration: underline;
+       }
+   
 @media(max-width:800px){
     body{
         background-color: var(--Violet);
         background-image: url("images/bg-mobile.svg");
         background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+
         color: white;
         font-family: var(--open-sans);
     
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-height: 100vh;
         justify-content: center;
+
+        min-height: 100vh;
+        padding: 0 20px;
     }
     section{
         display: flex;
@@ -88,5 +112,18 @@ section div{
         flex-direction: column;
         align-items: center;
         margin: 0;
+
+        margin-bottom: 50px;
+    }
+    #botao{
+        display: block;
+        color: var(--Violet);
+        text-decoration: none;
+        background-color: white;
+        width: fit-content;
+        padding: 15px  90px;
+        border-radius: 30px;
+    
+        box-shadow: 0px 5px 10px #43326c;
     }
 }
